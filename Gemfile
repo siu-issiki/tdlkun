@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.5.1'
 
 gem 'slack-ruby-bot', github: 'dblock/slack-ruby-bot' # '~> 0.5.0'
 gem 'puma'
@@ -10,7 +10,7 @@ gem 'celluloid-io'
 gem 'dentaku'
 
 group :development, :test do
-  gem 'rake', '~> 10.4'
+  gem 'rake'
   gem 'rubocop', '0.31.0'
   gem 'foreman'
 end
