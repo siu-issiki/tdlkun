@@ -6,6 +6,7 @@ gem 'slack-ruby-bot', github: 'dblock/slack-ruby-bot' # '~> 0.5.0'
 gem 'puma'
 gem 'sinatra'
 gem 'dotenv'
+gem 'celluloid-io'
 gem 'dentaku'
 
 group :development, :test do
