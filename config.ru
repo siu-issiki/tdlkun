@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'dotenv'
 Dotenv.load
 
-require 'slack-tdlkunbot'
+require 'slack-tdlkun'
 require 'web'
 
 Thread.abort_on_exception = true
