@@ -1,3 +1,5 @@
+require 'dentaku'
+
 module SlackTdlkunBot
   module Commands
     class Calculate < SlackRubyBot::Commands::Base
@@ -5,7 +7,8 @@ module SlackTdlkunBot
       command 'calculate'
 
       def self.call(client, data, match)
-        result = eval(match[:expression]) if match.names.include?('expression')
+        # result = eval(match[:expression]) if match.names.include?('expression')
+        result = Dentaku::Calculator.new.evaluate(match[:expression]) if match.names.include?('expression')
         result = result.to_s if result
         if result && result.length > 0
           client.say(channel: data.channel, text: result)
