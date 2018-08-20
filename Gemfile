@@ -8,6 +8,7 @@ gem 'sinatra'
 gem 'dotenv'
 gem 'celluloid-io'
 gem 'dentaku'
+gem 'giphy'
 
 group :development, :test do
   gem 'rake'
