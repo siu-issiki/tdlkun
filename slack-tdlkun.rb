@@ -1,0 +1,5 @@
+require 'slack-ruby-bot'
+require 'slack-tdlkun/version'
+require 'slack-tdlkun/about'
+require 'slack-tdlkun/commands'
+require 'slack-tdlkun/bot'
