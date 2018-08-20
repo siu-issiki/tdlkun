@@ -1,6 +1,7 @@
 
 require 'rubygems'
 require 'bundler'
+require 'bundler/gem_tasks'
 
 Bundler.setup :default, :development
 
@@ -15,5 +16,5 @@ unless ENV['RACK_ENV'] == 'production'
   require 'rubocop/rake_task'
   RuboCop::RakeTask.new
 
-  task default: [:rubocop, :spec]
+  task default: %i[rubocop spec]
 end
