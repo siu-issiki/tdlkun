@@ -14,6 +14,7 @@ group :development, :test do
   gem 'rake'
   gem 'rubocop', '~> 0.49.0'
   gem 'foreman'
+  gem "capistrano", "~> 3.11", require: false
 end
 
 group :test do
